@@ -1,0 +1,32 @@
+import java.util.*;
+public class Hello {
+    public static boolean vow(char c) {
+        if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u')
+        return true;
+        return false;
+    }
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		char c=sc.next().charAt(0);
+		char alp[]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+		int f=0;
+		if(Character.isUpperCase(c)){
+		    f=1;
+		    c=(char)((int)(c)-'A'+'a');
+		}
+		int k=(int)(c-'a');
+		k++;
+		while(vow(alp[k%26])){
+		    k++;
+		}
+		if(f==1) {
+		    char rotta = (char)((int)(alp[k]-'a'+'A'));
+		    System.out.print(rotta);
+		}
+		else{
+		    System.out.print(alp[k]);
+		}
+
+	}
+}
