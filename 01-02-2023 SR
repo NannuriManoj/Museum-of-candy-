@@ -1,0 +1,24 @@
+import java.util.*;
+public class Hello {
+    public static boolean vow(char i){
+        if(i=='a'|| i=='e'||i=='i'||i=='o'||i=='u'){
+            return true;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+//Your Code Here
+Scanner sc=new Scanner(System.in);
+char ch1=sc.next().charAt(0);
+char ch2=sc.next().charAt(0);
+int count=0;
+for(char i=ch1;i<=ch2;i++){
+   if(!vow(i)){
+       count++;
+   }
+}
+System.out.print(count);
+
+}
+}
