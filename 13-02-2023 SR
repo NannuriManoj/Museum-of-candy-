@@ -1,0 +1,26 @@
+import java.util.*;
+public class Hello {
+    public static boolean vowel(char i){
+        if(i=='a' || i=='e' || i=='i' || i=='o' ||i=='u'){
+            return true;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		for(int i=s.length()-1;i>=0;i--){
+		    if(vowel(s.charAt(i))){
+		        for(int j=i-1;j>=0;j--){
+		            System.out.print(s.charAt(j));
+		        }
+		        for(int k=i;k<s.length();k++){
+		            System.out.print(s.charAt(k));
+		        }
+		        break;
+		    }
+		}
+
+	}
+}
