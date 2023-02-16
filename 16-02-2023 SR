@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		int x1=x%100;
+		int y1=y%100;
+		int t1=((x/100)*100)+y1;
+		int t2=((y/100)*100)+x1;
+		System.out.print(t1*t2);
+	}
+}
