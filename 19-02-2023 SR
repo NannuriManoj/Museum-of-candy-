@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		for(char c = 'a';c<='z';c++) {
+		    if(s.indexOf(c)==-1) {
+		        System.out.print(c);
+		    }
+		}
+
+	}
+}
