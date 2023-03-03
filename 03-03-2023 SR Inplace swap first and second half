@@ -1,0 +1,28 @@
+The program must swap the first half and second half in the string str passed as the argument to
+the function swapFirstHalfSecondHalf.
+Note: The length of the string str is always even.
+Example Input/Output 1:
+Input:
+capslock
+Output:
+lockcaps
+Explanation:
+The first half of the string str is "caps".
+The second half of the string str is "lock".
+After swapping, the str becomes "lockcaps".
+Example Input/Output 2:
+Input:
+keymap
+Output:
+mapkey
+
+----------------------------------------------------------------------------------------------------------------
+
+private static void swapFirstHalfSecondHalf(char str[]) {
+    int n=str.length;
+    for(int i=0;i<n/2;i++){
+        char temp=str[i];
+        str[i]=str[i+(n/2)];
+        str[i+(n/2)]=temp;
+    }
+}
